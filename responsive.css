@@ -1,0 +1,87 @@
+/* For Small Screens  */
+
+nav .fa-solid{
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  #header {
+    background-image: url(images/phone-background.png);
+  }
+
+  .header-text {
+    margin-top: 85%;
+    font-size: 16px;
+  }
+
+  .header-text h1{
+    font-size: 30px;
+  }
+
+  nav .fa-solid{
+    display: block;
+    font-size: 25px;
+  }
+
+  nav ul {
+    background-color: #ff004f;
+    top: 0;
+    right: -35vw;
+    padding-top: 50px;
+    position: fixed;
+    height: 100vh;
+    width: 35vw;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+
+  nav ul li{
+    display: block;
+    margin: 25px;
+  }
+
+  nav ul .fa-solid{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+
+  .subtitle{
+    font-size: 40px;
+  }
+
+  .about-col-1, .about-col-2{
+    flex-basis: 100%;
+  }
+
+  .about-col-1{
+    margin-bottom: 2rem;
+  }
+
+  .about-col-2{
+    font-size: 14px;
+  }
+
+  .tab-links{
+    font-size: 20px;
+    margin-right: 10px;
+  }
+
+  /* Contact Section  */
+  
+  .contact-left, .contact-right{
+    flex-basis: 100%;
+  }
+
+  .contact-right{
+    margin-left: 0;
+  }
+
+  .copyright{
+    font-size: 10px;
+  }
+
+
+  
+}

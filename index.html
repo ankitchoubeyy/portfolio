@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <!-- Font Awesome Script-->
+    <script src="https://kit.fontawesome.com/9121d69857.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header Section  -->
+    <div id="header">
+        <div class="container">
+            <!-- Navigation Bar -->
+            <nav class="flex">
+                <img src="images/logo.png" alt="logo" class="logo">
+                <ul id="side-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+                <!-- Header Text -->
+                <div class="header-text">
+                    <p>Full Stack Developer</p>
+                    <h1>Hi, I'm <span>Ankit</span> <br> Choubey From India</h1>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- About Section  -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p align="justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda ipsum nesciunt molestiae esse fugiat hic illum harum distinctio, cum earum amet deserunt debitis! Vel provident quae quam aut magni expedita alias maxime doloremque cum? Facere soluta exercitationem necessitatibus perspiciatis!</p>
+
+                    <div class="tab-titles flex">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Design</span> <br> Fundamentals</li>
+                            <li><span>Web Developement</span> <br> Fundamentals</li>
+                            <li><span>Backend Developer</span> <br> Fundamentals</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>21 Years</span> <br> Fundamentals</li>
+                            <li><span>Web Developement</span> <br> Fundamentals</li>
+                            <li><span>Backend Developer</span> <br> Fundamentals</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents " id="education">
+                        <ul>
+                            <li><span>10th</span> <br> Shaifali Public School</li>
+                            <li><span>12th</span> <br> Shaifali Public School</li>
+                            <li><span>B.tech AI</span> <br> Mangalmay Institute of Engineernig and Technology</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit vero, vitae blanditiis impedit aperiam velit quo doloribus ab rerum natus!</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit vero, vitae blanditiis impedit aperiam velit quo doloribus ab rerum natus!</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit vero, vitae blanditiis impedit aperiam velit quo doloribus ab rerum natus!</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list ">
+                <div class="work">
+                    <img src="images/love calculator.png" alt="">
+                    <div class="layer">
+                        <h3>Love Calculator</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, provident?</p>
+                        <a href="https://ankitchoubeyy.github.io/LoveCalculator/"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/facebook clone.png" alt="">
+                    <div class="layer ">
+                        <h3>Facebook Clone</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, provident?</p>
+                        <a href="https://ankitchoubeyy.github.io/fcproject/"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/drum kit.png" alt="">
+                    <div class="layer">
+                        <h3>Drum Kit</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, provident?</p>
+                        <a href="https://ankitchoubeyy.github.io/DrumKit/"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p> <i class="fa-solid fa-envelope"></i> imkitchoubey@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone"></i> 8700xxx800</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="name" id="name" required placeholder="Your Name">
+                        <input type="email" name="email" id="email" required placeholder="xyz@gmail.com">
+                        <textarea name="message" id="message" rows="10"></textarea>
+                        <input type="button" value="Submit" class="btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © <Span>Ankit Choubey</Span> All rights reserved.</p>
+        </div>
+    </div>
+
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
