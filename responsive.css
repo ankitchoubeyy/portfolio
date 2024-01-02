@@ -79,7 +79,23 @@ nav .fa-solid{
   }
 
   .copyright{
+    width: 100%;
+    background-color: #262626;
+    height: 8vh;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .copyright p{
     font-size: 10px;
+    font-weight: bold;
+  }
+  
+  .copyright p span{
+    color: #ff004f;
+    font-size: 12px;
+    font-weight: 700;
   }
 
 
