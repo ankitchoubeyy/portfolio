@@ -41,11 +41,11 @@ function Skills() {
     <div className="py-5">
       <div className="text-white mx-auto p-8 text-center">
         <h2 className="text-6xl font-bold mb-4 pb-6">What i Do?</h2>
-        <div className="grid grid-cols-2 gap-6 md:grid-cols-4 place-items-center">
+        <div className="grid grid-cols-2 gap-1 md:gap-6 md:grid-cols-4 place-items-center">
           {skillsIcons.map((skill, index) => (
             <div
               key={index}
-              className="h-[160px]  w-[200px]  mb-4 flex flex-col justify-between items-center bg-white/10 p-4 rounded-xl"
+              className="h-[130px] md:h-[180px]  w-[140px] md:w-[200px]  mb-4 flex flex-col justify-between items-center bg-white/10 p-4 rounded-xl"
             >
               {skill.icon}
               <p className="mt-2">{skill.label}</p>

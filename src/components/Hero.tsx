@@ -11,7 +11,7 @@ function Hero() {
   return (
     <div className="py-24 relative overflow-clip">
       <div>
-      <div className="text-8xl font-bold text-center">
+      <div className="text-5xl md:text-8xl font-bold text-center px-2">
         <h1 className="text-[#98B4CE]">Hi, I am</h1>
         <h1 className="text-[#ec6313]">Ankit Choubey</h1>
       </div>

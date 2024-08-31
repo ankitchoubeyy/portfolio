@@ -79,7 +79,7 @@ function ProjectsSection() {
         className="px-4 py-6 md:px-12 text-white py-18 mt-20"
         id="portfolio"
       >
-        <h2 className="text-white text-center font-extrabold text-5xl">
+        <h2 className="text-white text-center font-extrabold text-4xl md:text-5xl">
           My Projects
         </h2>
         <div className="flex text-white flex-row justify-center items-center text-2xl gap-10 mt-10">
