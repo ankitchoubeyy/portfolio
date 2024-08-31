@@ -40,7 +40,9 @@ function Skills() {
   return (
     <div className="py-5">
       <div className="text-white mx-auto p-8 text-center">
-        <h2 className="text-6xl font-bold mb-4 pb-6">What i Do?</h2>
+      <h2 className="text-white mb-8 text-center font-extrabold text-4xl md:text-5xl  ">
+        Technologies
+      </h2>
         <div className="grid grid-cols-2 gap-1 md:gap-6 md:grid-cols-4 place-items-center">
           {skillsIcons.map((skill, index) => (
             <div

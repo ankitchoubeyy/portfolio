@@ -36,7 +36,7 @@ function Hero() {
         />
       </motion.div>
 
-      <p className="text-center max-w-[500px] mx-auto text-white/80 mt-2">
+      <p className="text-center px-2  max-w-[500px] mx-auto text-white/80 mt-2">
         I am a Full Stack Developer focused on creatinng a websites that
         provides the best experience to the users.
       </p>

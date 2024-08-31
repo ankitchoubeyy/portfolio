@@ -6,8 +6,9 @@ import mail from "../assets/mail.png";
 function Contact() {
   return (
     <>
-      <h1 className="text-center text-6xl font-bold text-white">Contact</h1>
-
+      <h2 className="text-white text-center font-extrabold text-4xl md:text-5xl  ">
+        Contact
+      </h2>
       <div
         className="max-w-[1200px] mx-auto flex flex-col lg:flex-row text-white/70 p-8 rounded-lg space-y-8 lg:space-x-8 justify-evenly"
         id="contact"
@@ -18,23 +19,23 @@ function Contact() {
               <Image
                 src={phone}
                 alt="phoneIcon"
-                className="h-[110px] w-auto mr-6"
+                className="h-[80px] md:h-[110px] w-auto mr-6"
               />
-              <p className="text-xl">+91 9655289306</p>
+              <p className="text-sm md:text-xl">+91 9650289306</p>
             </li>
             <li className="flex items-center">
               <Image
                 src={mail}
                 alt="mailIcon"
-                className="h-[110px] w-auto mr-6"
+                className="h-[80px] md:h-[110px] w-auto mr-6"
               />
-              <p className="text-xl">imkitchoubey@gmail.com</p>
+              <p className="text-sm md:text-xl">imkitchoubey@gmail.com</p>
             </li>
           </ul>
         </div>
 
         <div className="bg-white/10 p-6 rounded-xl max-w-[550px] mx-auto">
-          <h2 className="text-5xl font-bold text-orange-400 mb-4">
+          <h2 className="text-3xl md:text-5xl font-bold text-orange-400 mb-4">
             Let&apos;s Connect
           </h2>
           <p className="text-white/70 mb-6">Drop your Queries</p>
@@ -43,7 +44,7 @@ function Contact() {
             action="https://getform.io/f/bxojnrla"
             method="POST"
           >
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid md:grid-cols-2 gap-4">
               <input
                 type="text"
                 name="name"
