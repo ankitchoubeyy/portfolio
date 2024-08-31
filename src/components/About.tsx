@@ -7,6 +7,29 @@ import pc from "../assets/pc.png";
 import card from "../assets/card.png";
 import finance from "../assets/finance.png";
 
+const about = [
+  {
+    title: "This is the title",
+    Caption: "This is an example of caption",
+    imgSrc: book
+  },
+  {
+    title: "This is the title",
+    Caption: "This is an example of caption",
+    imgSrc: pc
+  },
+  {
+    title: "This is the title",
+    Caption: "This is an example of caption",
+    imgSrc: card
+  },
+  {
+    title: "This is the title",
+    Caption: "This is an example of caption",
+    imgSrc: finance
+  },
+]
+
 function About() {
   return (
     <div className="max-w-[1200px] mx-auto px-6 md:px-0" id="about">

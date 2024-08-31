@@ -8,6 +8,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @keyframes gradient-xy {
   0%, 100%{
     background-position: 0% 50%;

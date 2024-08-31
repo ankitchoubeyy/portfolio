@@ -77,7 +77,7 @@ function ProjectsSection() {
     <>
       <div
         className="px-4 py-6 md:px-12 text-white py-18 mt-20"
-        id="portfolio"
+        id="project"
       >
         <h2 className="text-white text-center font-extrabold text-4xl md:text-5xl">
           My Projects
@@ -99,7 +99,7 @@ function ProjectsSection() {
             isSelected={tag === "Backend"}
           />
         </div>
-        <div className="grid md:grid-cols-3 gap-8 md:gap-12">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
           {fileteredProjects.map((project, index) => (
             <motion.div
               key={index}

@@ -1,7 +1,9 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import phone from "../assets/phone.png";
 import mail from "../assets/mail.png";
+import { motion } from "framer-motion";
 
 function Contact() {
   return (
@@ -13,7 +15,13 @@ function Contact() {
         className="max-w-[1200px] mx-auto flex flex-col lg:flex-row text-white/70 p-8 rounded-lg space-y-8 lg:space-x-8 justify-evenly"
         id="contact"
       >
-        <div className="flex justify-center items-center">
+        <motion.div
+          className="flex justify-center items-center"
+          initial={{ opacity: 0, y: 75 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.25 }}
+        >
           <ul>
             <li className="flex items-center">
               <Image
@@ -32,9 +40,15 @@ function Contact() {
               <p className="text-sm md:text-xl">imkitchoubey@gmail.com</p>
             </li>
           </ul>
-        </div>
+        </motion.div>
 
-        <div className="bg-white/10 p-6 rounded-xl max-w-[550px] mx-auto">
+        <motion.div 
+          className="bg-white/10 p-6 rounded-xl max-w-[550px] mx-auto"
+          initial={{ opacity: 0, y: 75 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.25 }}
+        >
           <h2 className="text-3xl md:text-5xl font-bold text-orange-400 mb-4">
             Let&apos;s Connect
           </h2>
@@ -79,7 +93,7 @@ function Contact() {
               Send Message
             </button>
           </form>
-        </div>
+        </motion.div>
       </div>
     </>
   );

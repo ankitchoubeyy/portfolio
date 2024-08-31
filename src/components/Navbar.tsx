@@ -41,24 +41,14 @@ function Navbar() {
   return (
     <div className="text-white/70 pt-6">
       <div className="hidden md:flex items-center px-4 py-2 mx-auto max-w-[400px]">
-        <ul className="flex space-x-8 flex-row">
+        <ul className="flex space-x-8 flex-row text-xl">
           {navLinks.map((link, index) => (
-            <li key={index}>
+            <li key={index} className="hover:text-orange-500">
               <Link href={link.path}>{link.title}</Link>
             </li>
           ))}
 
-          <li>
-            <a href="#contact" className="group">
-              <h1 className="text-lg font-bold text-white/70 cursor-pointer">
-                Contact Me
-              </h1>
-              <div className="relative">
-                <div className="absolute w-2/3 h-1 transition-all duration-300 ease-out bg-orange-400 rounded-full group-hover:w-full"></div>
-                <div className="mt-[2px] absolute w-2/3 h-1 transition-all duration-300 ease-out bg-orange-600 rounded-full group-hover:w-full"></div>
-              </div>
-            </a>
-          </li>
+          
         </ul>
       </div>
 
