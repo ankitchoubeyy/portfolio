@@ -8,30 +8,30 @@ import { motion } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "React portfolio website",
-    description: `Project 1 description`,
-    image: `/images/projects/portfolio.jpg`,
-    tags: [`All`, `Backend`],
-    gitUrl: "/",
-    previewUrl: "/",
+    title: "Portfolio Website",
+    description: `Next.js | TailwindCSS | Framer Motion`,
+    image: `/images/projects/Portfolio.png`,
+    tags: [`All`, `Frontend`],
+    gitUrl: "https://github.com/ankitchoubeyy/portfolio",
+    previewUrl: "https://portfolio-azure-nu-72.vercel.app/",
   },
   {
     id: 2,
-    title: "React portfolio website",
-    description: `Project 1 description`,
-    image: `/images/projects/portfolio.jpg`,
+    title: "Simple Calculator",
+    description: `HTML | CSS | JavaScript`,
+    image: `/images/projects/calculator.jpg`,
     tags: [`All`, `Frontend`],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/ankitchoubeyy/calculator",
+    previewUrl: "https://ankitchoubeyy.github.io/calculator/",
   },
   {
     id: 3,
-    title: "React portfolio website",
-    description: `Project 1 description`,
-    image: `/images/projects/portfolio.jpg`,
+    title: "Xpo-Social Web App",
+    description: `Python | Django | Bootstrap`,
+    image: `/images/projects/xpo.png`,
     tags: [`All`, `Backend`],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/ankitchoubeyy/Xpo--Social-WebApp",
+    previewUrl: "#",
   },
   {
     id: 4,
@@ -53,12 +53,12 @@ const projectsData = [
   },
   {
     id: 6,
-    title: "React portfolio website ",
-    description: `Project 1 description`,
-    image: `/images/projects/portfolio.jpg`,
-    tags: [`All`, `Backend`],
-    gitUrl: "/",
-    previewUrl: "/",
+    title: "Love Calculator ",
+    description: `HTML | CSS | JavaScript`,
+    image: `/images/projects/lovecalculator.png`,
+    tags: [`All`, `Frontend`],
+    gitUrl: "https://github.com/ankitchoubeyy/LoveCalculator",
+    previewUrl: "https://ankitchoubeyy.github.io/LoveCalculator/",
   },
 ];
 
@@ -82,7 +82,7 @@ function ProjectsSection() {
         <h2 className="text-white text-center font-extrabold text-4xl md:text-5xl">
           My Projects
         </h2>
-        <div className="flex text-white flex-row justify-center items-center text-2xl gap-10 mt-10">
+        <div className="flex text-white flex-row justify-center items-center text-2xl gap-5 sm:gap-10 mt-10">
           <ProjectTag
             onClick={handleTagChange}
             tag="All"

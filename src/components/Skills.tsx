@@ -1,5 +1,6 @@
 "use client"
-import { FaHtml5, FaCss3Alt, FaReact, FaJsSquare } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaReact, FaJsSquare, FaPython, FaNodeJs } from "react-icons/fa";
+import { SiTailwindcss, SiExpress, SiDjango, SiMysql, SiNextdotjs, SiMongodb } from "react-icons/si";
 import { motion } from "framer-motion";
 
 const skillsIcons = [
@@ -12,28 +13,44 @@ const skillsIcons = [
     label: "CSS",
   },
   {
-    icon: <FaReact size={140} />,
-    label: "React",
-  },
-  {
     icon: <FaJsSquare size={140} />,
     label: "JavaScript",
-  },
-  {
-    icon: <FaHtml5 size={140} />,
-    label: "HTML",
-  },
-  {
-    icon: <FaCss3Alt size={140} />,
-    label: "CSS",
   },
   {
     icon: <FaReact size={140} />,
     label: "React",
   },
   {
-    icon: <FaJsSquare size={140} />,
-    label: "JavaScript",
+    icon: <SiTailwindcss size={140} />,
+    label: "Tailwind CSS",
+  },
+  {
+    icon: <SiNextdotjs size={140} />,
+    label: "Next.js",
+  },
+  {
+    icon: <SiExpress size={140} />,
+    label: "Express.js",
+  },
+  {
+    icon: <FaNodeJs size={140} />,
+    label: "Node.js",
+  },
+  {
+    icon: <FaPython size={140} />,
+    label: "Python",
+  },
+  {
+    icon: <SiDjango size={140} />,
+    label: "Django",
+  },
+  {
+    icon: <SiMysql size={140} />,
+    label: "MySQL",
+  },
+  {
+    icon: <SiMongodb size={140} />,
+    label: "MongoDB",
   },
 ];
 
