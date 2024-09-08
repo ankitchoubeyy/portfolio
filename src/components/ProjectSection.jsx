@@ -19,7 +19,7 @@ const projectsData = [
     id: 2,
     title: "DocMemo - Blog",
     description: `Next.js | Tailwind CSS | Vercel`,
-    image: `/images/projects/docmemo.jpg`,
+    image: `/images/projects/docmemo.png`,
     tags: [`All`, `Frontend`],
     gitUrl: "https://github.com/ankitchoubeyy/DocMemo",
     previewUrl: "https://docmemo.vercel.app/",
