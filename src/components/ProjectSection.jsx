@@ -28,7 +28,7 @@ const projectsData = [
     id: 3,
     title: "Xpo-Social Web App",
     description: `Python | Django | Bootstrap`,
-    image: `/images/projects/xpo.png`,
+    image: `/images/projects/xpo.jpg`,
     tags: [`All`, `Backend`],
     gitUrl: "https://github.com/ankitchoubeyy/Xpo--Social-WebApp",
     previewUrl: "#",
