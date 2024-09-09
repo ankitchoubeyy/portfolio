@@ -8,28 +8,6 @@ import card from "../assets/card.png";
 import finance from "../assets/finance.png";
 import { TypeAnimation } from "react-type-animation";
 
-const about = [
-  {
-    title: "This is the title",
-    Caption: "This is an example of caption",
-    imgSrc: book,
-  },
-  {
-    title: "This is the title",
-    Caption: "This is an example of caption",
-    imgSrc: pc,
-  },
-  {
-    title: "This is the title",
-    Caption: "This is an example of caption",
-    imgSrc: card,
-  },
-  {
-    title: "This is the title",
-    Caption: "This is an example of caption",
-    imgSrc: finance,
-  },
-];
 
 function About() {
   return (
@@ -45,7 +23,7 @@ function About() {
             width={180}
             height={50}
             alt="my image"
-            className="md:h-[400px] w-auto rounded-md"
+            className="md:h-[400px] w-auto rounded-md hidden md:block"
           ></Image>
         </div>
         <div className="flex flex-col bg-[#181818] rounded-md p-4">
@@ -60,6 +38,7 @@ function About() {
           </p>
           <h3 className="text-[20px] font-bold my-2">Education</h3>
           <p>Mangalmay Institute of Engineering and Technology, <span className="text-orange-400">2021 -2025</span> | ( B.Tech - CSE )</p>
+          <button className="bg-orange-400 hover:bg-orange-600 py-2 px-10 md:max-w-[300px] rounded-md my-5 font-bold text-[20px] border-none">Download Resume</button>
         </div>
       </div>
     </div>
