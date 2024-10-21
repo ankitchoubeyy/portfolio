@@ -57,6 +57,7 @@ function Contact() {
             className="space-y-4"
             action="https://getform.io/f/bxojnrla"
             method="POST"
+            autoComplete="off"
           >
             <div className="grid md:grid-cols-2 gap-4">
               <input
@@ -86,7 +87,7 @@ function Contact() {
             <textarea
               name=""
               id=""
-              className="bg-black/70 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-orange-400 w-full"
+              className="bg-black/70 resize-none rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-orange-400 w-full"
               placeholder="Your Message"
             ></textarea>
             <button className="bg-orange-700 hover:bg-orange-500 px-6 py-2 w-full font-semibold rounded-xl text-xl">

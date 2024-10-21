@@ -11,12 +11,12 @@ import { TypeAnimation } from "react-type-animation";
 
 function About() {
   return (
-    <div className="max-w-[1200px] mx-auto px-6 md:px-0" id="about">
+    <div className="max-w-[1200px] mx-auto px-6 md:px-0 none hidden" id="about">
       \
-      <h2 className="text-white mb-14 text-center font-extrabold text-4xl md:text-5xl  ">
+      <h2 className="text-white mb-14 text-center font-extrabold text-4xl md:text-5xl">
         About Me
       </h2>
-      <div className="flex flex-col md:flex-row gap-5 text-white max-w[800px] px-16 justify-around">
+      <div className="flex flex-col md:flex-row gap-5 text-white lg:max-w[800px] px-16 justify-around">
         <div className="md:w-[400px]">
           <Image
             src="/images/Formal.jpg"
