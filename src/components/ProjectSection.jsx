@@ -35,12 +35,12 @@ const projectsData = [
   },
   {
     id: 4,
-    title: "Simple Calculator",
-    description: `HTML | CSS | JavaScript`,
-    image: `/images/projects/calculator.jpg`,
+    title: "Education Website",
+    description: `React.js | Tailwind CSS | Web3forms`,
+    image: `/images/projects/education.png`,
     tags: [`All`, `Frontend`],
-    gitUrl: "https://github.com/ankitchoubeyy/calculator",
-    previewUrl: "https://ankitchoubeyy.github.io/calculator/",
+    gitUrl: "https://github.com/ankitchoubeyy/education-website",
+    previewUrl: "https://kaydee-institute.vercel.app/",
   },
   {
     id: 5,
