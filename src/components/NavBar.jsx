@@ -22,9 +22,10 @@ function NavBar() {
   };
 
   const dataMenu = [
-    { title: "Skills", path: "#skills" },
+    { title: "Home", path: "/" },
     { title: "Projects", path: "#project" },
-    { title: "Contact", path: "#contact" },
+    { title: "Technologies", path: "#skills" },
+    { title: "Contact me", path: "#contact" },
   ];
 
   return (
@@ -38,9 +39,9 @@ function NavBar() {
         <h1 className="text-2xl font-semibold font-logo">Ankit Choubey</h1>
 
         {/* Desktop Navigation Links */}
-        <ul className="hidden md:flex gap-8 text-lg">
+        <ul className="hidden md:flex gap-8 text-lg font-nav_font font-semibold">
           {dataMenu.map((item, index) => (
-            <li key={index}>
+            <li key={index} >
               <a href={item.path} className="hover:text-gray-300 transition">
                 {item.title}
               </a>
@@ -60,7 +61,7 @@ function NavBar() {
       {/* Mobile Navigation Menu */}
       {mobileMenu && (
         <div className="bg-[#181818] md:hidden">
-          <ul className="flex flex-col gap-4 text-lg p-5">
+          <ul className="flex flex-col gap-4 text-lg font-nav_font font-semibold text-right p-5">
           {dataMenu.map((item, index) => (
             <li key={index} onClick={toggleMenu}>
               <a href={item.path} className="hover:text-gray-300 transition">

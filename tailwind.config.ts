@@ -15,6 +15,7 @@ const config: Config = {
       },
       fontFamily: {
         "logo": ["Righteous", "sans-serif"],
+        "nav_font": ["Montserrat", "sans-serif"],
       },
     },
   },
