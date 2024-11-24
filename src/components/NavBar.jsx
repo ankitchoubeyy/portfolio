@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
-import Image from 'next/image';
+import Resume from "../components/Resume";
 
 function NavBar() {
   const [sticky, setSticky] = useState(false);
@@ -12,9 +12,9 @@ function NavBar() {
     const handleScroll = () => {
       setSticky(window.scrollY > 50);
     };
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const toggleMenu = () => {
@@ -31,7 +31,7 @@ function NavBar() {
   return (
     <nav
       className={`w-full bg-[#181818] text-white fixed top-0 left-0 z-50 ${
-        sticky ? 'shadow-lg' : ''
+        sticky ? "shadow-lg" : ""
       } transition-all duration-300`}
     >
       <div className="container mx-auto flex justify-between items-center py-4 px-5">
@@ -39,14 +39,17 @@ function NavBar() {
         <h1 className="text-2xl font-semibold font-logo">Ankit Choubey</h1>
 
         {/* Desktop Navigation Links */}
-        <ul className="hidden md:flex gap-8 text-lg font-nav_font font-semibold">
+        <ul className="hidden md:flex items-center  gap-8 text-lg font-nav_font font-semibold">
           {dataMenu.map((item, index) => (
-            <li key={index} >
+            <li key={index}>
               <a href={item.path} className="hover:text-gray-300 transition">
                 {item.title}
               </a>
             </li>
           ))}
+          <li>
+            <Resume />
+          </li>
         </ul>
 
         {/* Mobile Menu Icon */}
@@ -54,7 +57,7 @@ function NavBar() {
           onClick={toggleMenu}
           className="block md:hidden focus:outline-none"
         >
-          <GiHamburgerMenu className='text-3xl'/>
+          <GiHamburgerMenu className="text-3xl" />
         </button>
       </div>
 
@@ -62,13 +65,16 @@ function NavBar() {
       {mobileMenu && (
         <div className="bg-[#181818] md:hidden">
           <ul className="flex flex-col gap-4 text-lg font-nav_font font-semibold text-right p-5">
-          {dataMenu.map((item, index) => (
-            <li key={index} onClick={toggleMenu}>
-              <a href={item.path} className="hover:text-gray-300 transition">
-                {item.title}
-              </a>
+            {dataMenu.map((item, index) => (
+              <li key={index} onClick={toggleMenu}>
+                <a href={item.path} className="hover:text-gray-300 transition">
+                  {item.title}
+                </a>
+              </li>
+            ))}
+            <li>
+            <Resume />
             </li>
-          ))}
           </ul>
         </div>
       )}
