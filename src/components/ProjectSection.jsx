@@ -44,15 +44,6 @@ const projectsData = [
   },
   {
     id: 5,
-    title: "React portfolio website ",
-    description: `Project 1 description`,
-    image: `/images/projects/portfolio.jpg`,
-    tags: [`All`, `Backend`],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 6,
     title: "Love Calculator ",
     description: `HTML | CSS | JavaScript`,
     image: `/images/projects/lovecalculator.png`,
