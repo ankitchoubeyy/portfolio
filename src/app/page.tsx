@@ -6,11 +6,13 @@ import Navbar from "@/components/Navbar";
 import ProjectSection from "@/components/ProjectSection";
 import Skills from "@/components/Skills";
 import Image from "next/image";
+import NavBar from "../components/NavBar"
 
 export default function Home() {
   return (
     <div className="bg-black">
-      <Navbar/>
+      <NavBar/>
+      {/* <Navbar/> */}
       <Hero/>
       <About/>
       <ProjectSection/>

@@ -9,7 +9,7 @@ import profileImage from "../assets/profilepic.png";
 
 function Hero() {
   return (
-    <div className="py-24 relative overflow-clip">
+    <div className="py-24 mt-14 relative overflow-clip">
       <div>
       <div className="text-5xl md:text-8xl font-bold text-center px-2">
         <h1 className="text-[#98B4CE] mb-5">Hi, I am</h1>

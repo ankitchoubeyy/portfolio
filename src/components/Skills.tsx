@@ -56,7 +56,7 @@ const skillsIcons = [
 
 function Skills() {
   return (
-    <div className="py-5">
+    <div className="py-5" id="skills">
       <div className="text-white mx-auto p-8 text-center">
       <h2 className="text-white mb-8 text-center font-extrabold text-4xl md:text-5xl  ">
         Technologies
