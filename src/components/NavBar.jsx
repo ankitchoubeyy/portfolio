@@ -62,7 +62,7 @@ function NavBar() {
         <div className="bg-[#181818] md:hidden">
           <ul className="flex flex-col gap-4 text-lg p-5">
           {dataMenu.map((item, index) => (
-            <li key={index}>
+            <li key={index} onClick={toggleMenu}>
               <a href={item.path} className="hover:text-gray-300 transition">
                 {item.title}
               </a>
