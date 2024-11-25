@@ -68,6 +68,7 @@ function Contact() {
               />
               <input
                 type="text"
+                name="lastName"
                 className="bg-black/70 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-orange-400"
                 placeholder="Last Name"
               />
@@ -85,8 +86,8 @@ function Contact() {
               />
             </div>
             <textarea
-              name=""
-              id=""
+              name="message"
+              id="message"
               className="bg-black/70 resize-none rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-orange-400 w-full"
               placeholder="Your Message"
             ></textarea>

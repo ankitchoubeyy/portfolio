@@ -51,6 +51,15 @@ const projectsData = [
     gitUrl: "https://github.com/ankitchoubeyy/LoveCalculator",
     previewUrl: "https://ankitchoubeyy.github.io/LoveCalculator/",
   },
+  {
+    id: 6,
+    title: "EMS - Employee Management System",
+    description: `React.js | Tailwind CSS`,
+    image: `/images/projects/ems.png`,
+    tags: [`All`, `Frontend`],
+    gitUrl: "https://github.com/ankitchoubeyy/ems",
+    previewUrl: "https://myems.vercel.app/",
+  },
 ];
 
 function ProjectsSection() {
