@@ -23,9 +23,9 @@ function NavBar() {
   };
 
   const dataMenu = [
-    { title: "Home", path: "/" },
+    { title: "Home", path: "#home" },
     { title: "Projects", path: "#project" },
-    { title: "Technologies", path: "#skills" },
+    { title: "Blog", path: "#" },
     { title: "Contact me", path: "#contact" },
   ];
 
