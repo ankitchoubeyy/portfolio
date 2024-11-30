@@ -49,10 +49,10 @@ function Contact() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.25 }}
         >
-          <h2 className="text-3xl md:text-5xl font-bold text-orange-400 mb-4">
+          <h2 className="text-3xl md:text-5xl font-Secondary font-bold text-orange-400 mb-4">
             Let&apos;s Connect
           </h2>
-          <p className="text-white/70 mb-6">Drop your Queries</p>
+          <p className="text-white/70 mb-6 font-Quaternary">Drop your Queries</p>
           <form
             className="space-y-4"
             action="https://getform.io/f/bxojnrla"

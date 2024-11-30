@@ -12,8 +12,8 @@ function Hero() {
     <div className="py-24 mt-14 relative overflow-clip">
       <div>
       <div className="text-5xl md:text-8xl font-bold text-center px-2">
-        <h1 className="text-[#98B4CE] mb-5 font-nav_font">Hi, I am</h1>
-        <h1 className="text-[#ec6313] mb-5 font-logo">Ankit Choubey</h1>
+        <h1 className="text-[#98B4CE] mb-5 font-Secondary">Hi, I am</h1>
+        <h1 className="text-[#ec6313] mb-5 font-Primary">Ankit Choubey</h1>
       </div>
 
       <motion.div className="hidden md:block absolute left-[130px] top-[170px]" drag>

@@ -6,6 +6,7 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class",
   theme: {
     extend: {
       backgroundImage: {
@@ -14,11 +15,25 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       fontFamily: {
-        "logo": ["Righteous", "sans-serif"],
-        "nav_font": ["Montserrat", "sans-serif"],
+        "Primary": ["Righteous", "sans-serif"],
+        "Secondary": ["Montserrat", "sans-serif"],
+        "Tertiary": ["Roboto", "sans-serif"],
+        "Quaternary": ["Nunito Sans", "serif"],
+      },
+      keyframes: {
+        colorChange: {
+          '0%,': { backgroundColor: '#cd475d' }, // Blue
+          '25%': { backgroundColor: '#ec6313' },     // Orange
+          '50%': { backgroundColor: '#cd475d' },     // Orange
+          '75%': { backgroundColor: '#cd475d' },     // Orange
+        },
+      },
+      animation: {
+        'color-change': 'colorChange 3s linear infinite',
       },
     },
   },
   plugins: [],
 };
+
 export default config;

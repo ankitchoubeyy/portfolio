@@ -6,7 +6,7 @@ function Footer() {
   return (
     <div className='mt-12 text-white/70 container py-8 mx-auto border-t border-gray-700 pt-4 flex justify-between items-center px-4' >
 
-        <h1 className='text-md md:text-2xl font-bold mt-4 font-logo'>Ankit Choubey</h1>
+        <h1 className='text-md md:text-2xl font-bold mt-4 font-Primary'>Ankit Choubey</h1>
 
 
         <div className='flex space-x-4 mt-4'>

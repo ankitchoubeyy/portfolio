@@ -53,7 +53,7 @@ const projectsData = [
   },
   {
     id: 6,
-    title: "EMS - Employee Management System",
+    title: "EMS",
     description: `React.js | Tailwind CSS`,
     image: `/images/projects/ems.png`,
     tags: [`All`, `Frontend`],

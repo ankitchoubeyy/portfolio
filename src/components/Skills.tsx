@@ -58,7 +58,7 @@ function Skills() {
   return (
     <div className="py-5" id="skills">
       <div className="text-white mx-auto p-8 text-center">
-      <h2 className="text-white mb-8 text-center font-extrabold text-4xl md:text-5xl  ">
+      <h2 className="text-white mb-16 text-center font-extrabold text-4xl md:text-5xl  ">
         Technologies
       </h2>
         <div className="grid grid-cols-2 gap-1 md:gap-6 sm:grid-cols-3 md:grid-cols-4 place-items-center">

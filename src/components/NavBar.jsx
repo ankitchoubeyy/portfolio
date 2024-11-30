@@ -1,7 +1,8 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { GiHamburgerMenu } from "react-icons/gi";
+import { GiHamburgerMenu, GiCancel } from "react-icons/gi";
+import { MdCancelPresentation } from "react-icons/md";
 import Resume from "../components/Resume";
 
 function NavBar() {
@@ -36,10 +37,10 @@ function NavBar() {
     >
       <div className="container mx-auto flex justify-between items-center py-4 px-5">
         {/* Brand Name */}
-        <h1 className="text-2xl font-semibold font-logo">Ankit Choubey</h1>
+        <h1 className="text-2xl font-semibold font-Primary">Ankit Choubey</h1>
 
         {/* Desktop Navigation Links */}
-        <ul className="hidden md:flex items-center  gap-8 text-lg font-nav_font font-semibold">
+        <ul className="hidden md:flex items-center  gap-8 text-lg font-Secondary font-semibold">
           {dataMenu.map((item, index) => (
             <li key={index}>
               <a href={item.path} className="hover:text-gray-300 transition">
@@ -55,16 +56,18 @@ function NavBar() {
         {/* Mobile Menu Icon */}
         <button
           onClick={toggleMenu}
-          className="block md:hidden focus:outline-none"
+          className="block md:hidden focus:outline-none transition-all duration-300"
         >
-          <GiHamburgerMenu className="text-3xl" />
+          {
+            !mobileMenu ? (<GiHamburgerMenu className="text-3xl" />): (<MdCancelPresentation className="text-3xl" />)
+          }
         </button>
       </div>
 
       {/* Mobile Navigation Menu */}
       {mobileMenu && (
         <div className="bg-[#181818] md:hidden">
-          <ul className="flex flex-col gap-4 text-lg font-nav_font font-semibold text-right p-5">
+          <ul className="flex flex-col gap-4 text-lg font-Secondary font-semibold text-right p-5">
             {dataMenu.map((item, index) => (
               <li key={index} onClick={toggleMenu}>
                 <a href={item.path} className="hover:text-gray-300 transition">
