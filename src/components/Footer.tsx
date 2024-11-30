@@ -4,7 +4,7 @@ import { FaSquareXTwitter} from "react-icons/fa6"
 
 function Footer() {
   return (
-    <div className='mt-12 text-white/70 container py-8 mx-auto border-t border-gray-700 pt-4 flex justify-between items-center px-4' >
+    <div className='mt-12 text-white/70 container py-8 mx-auto border-t border-gray-700 pt-4 flex justify-between items-center px-4 bg-black' >
 
         <h1 className='text-md md:text-2xl font-bold mt-4 font-Primary'>Ankit Choubey</h1>
 
