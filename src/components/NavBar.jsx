@@ -1,9 +1,9 @@
 "use client";
+import Resume from "../components/Resume";
 
 import React, { useEffect, useState } from "react";
 import { GiHamburgerMenu, GiCancel } from "react-icons/gi";
 import { MdCancelPresentation } from "react-icons/md";
-import Resume from "../components/Resume";
 
 function NavBar() {
   const [sticky, setSticky] = useState(false);
@@ -23,8 +23,8 @@ function NavBar() {
   };
 
   const dataMenu = [
-    { title: "Home", path: "#home" },
-    { title: "Projects", path: "#project" },
+    { title: "Home", path: "/" },
+    { title: "About", path: "/about" },
     { title: "Blog", path: "#" },
     { title: "Contact me", path: "#contact" },
   ];
@@ -33,7 +33,7 @@ function NavBar() {
     <nav
       className={`w-full bg-[#181818] text-white fixed top-0 left-0 z-50 ${
         sticky ? "shadow-lg" : ""
-      } transition-all duration-300`}
+      } transition-all duration-500`}
     >
       <div className="container mx-auto flex justify-between items-center py-4 px-5">
         {/* Brand Name */}
