@@ -31,3 +31,9 @@ html {
   animation: gradient-xy 5s ease infinite;
   background-size: 200% 200%;
 }
+
+.underline-orange{
+  text-decoration: underline;
+  text-decoration-color: #ec631382;
+  text-underline-offset: 8px;
+}
