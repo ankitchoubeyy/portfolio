@@ -37,7 +37,7 @@ function NavBar() {
     >
       <div className="container mx-auto flex justify-between items-center py-4 px-5">
         {/* Brand Name */}
-        <h1 className="text-2xl font-semibold font-Primary">Ankit Choubey</h1>
+        <a href="/"><h1 className="text-2xl font-semibold font-Primary tracking-wider">Ankit Choubey</h1></a>
 
         {/* Desktop Navigation Links */}
         <ul className="hidden md:flex items-center  gap-8 text-lg font-Secondary font-semibold">

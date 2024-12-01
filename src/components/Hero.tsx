@@ -13,7 +13,7 @@ function Hero() {
       <div>
       <div className="text-5xl md:text-8xl font-bold text-center px-2">
         <h1 className="text-[#98B4CE] mb-5 font-Secondary">Hi, I am</h1>
-        <h1 className="text-[#ec6313] mb-5 font-Primary">Ankit Choubey</h1>
+        <h1 className="text-[#ec6313] mb-5 font-Primary tracking-wide">Ankit Choubey</h1>
       </div>
 
       <motion.div className="hidden md:block absolute left-[130px] top-[170px]" drag>
@@ -36,7 +36,7 @@ function Hero() {
         />
       </motion.div>
 
-      <p className="text-center font-nav_font px-2  max-w-[500px] mx-auto text-white/80 mt-2">
+      <p className="text-center font-Secondary px-5  max-w-[500px] mx-auto text-white/80 mt-2">
         I am a Full Stack Developer focused on creatinng a websites that
         provides the best experience to the users.
       </p>
