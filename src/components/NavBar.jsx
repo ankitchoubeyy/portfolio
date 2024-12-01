@@ -1,5 +1,6 @@
 "use client";
 import Resume from "../components/Resume";
+import Link from "next/link";
 
 import React, { useEffect, useState } from "react";
 import { GiHamburgerMenu, GiCancel } from "react-icons/gi";
@@ -37,15 +38,15 @@ function NavBar() {
     >
       <div className="container mx-auto flex justify-between items-center py-4 px-5">
         {/* Brand Name */}
-        <a href="/"><h1 className="text-2xl font-semibold font-Primary tracking-wider">Ankit Choubey</h1></a>
+        <Link href="/"><h1 className="text-2xl font-semibold font-Primary tracking-wider">Ankit Choubey</h1></Link>
 
         {/* Desktop Navigation Links */}
         <ul className="hidden md:flex items-center  gap-8 text-lg font-Secondary font-semibold">
           {dataMenu.map((item, index) => (
             <li key={index}>
-              <a href={item.path} className="hover:text-gray-300 transition">
+              <Link href={item.path} className="hover:text-gray-300 transition">
                 {item.title}
-              </a>
+              </Link>
             </li>
           ))}
           <li>
@@ -70,9 +71,9 @@ function NavBar() {
           <ul className="flex flex-col gap-4 text-lg font-Secondary font-semibold text-right p-5">
             {dataMenu.map((item, index) => (
               <li key={index} onClick={toggleMenu}>
-                <a href={item.path} className="hover:text-gray-300 transition">
+                <Link href={item.path} className="hover:text-gray-300 transition">
                   {item.title}
-                </a>
+                </Link>
               </li>
             ))}
             <li>
