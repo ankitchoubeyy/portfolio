@@ -1,18 +1,16 @@
 import React from "react";
-import { FaBookReader, FaLaptopCode, FaBook } from "react-icons/fa";
+import { FaBookReader,FaLaptopCode, FaBook} from "react-icons/fa";
 import { MdDoubleArrow, MdSportsCricket } from "react-icons/md";
 import { RiEmotionHappyFill } from "react-icons/ri";
 
 const page = () => {
   return (
     <div className="mt-20 container mx-auto px-5 min-h-screen">
-      <h1 className="text-md md:text-3xl font-bold my-5 font-Secondary">
-        Hi, I&apos;m Ankit Choubey
-      </h1>
-      <div className="flex flex-col gap-5 md:gap-10 font-Tertiary leading-loose text-gray-300 text-sm ">
+      
+      <div className="flex flex-col gap-5 md:gap-10 leading-loose text-gray-300 text-sm font-Quaternary text-justify">
         <p>
           I&apos;m a passionate{" "}
-          <span className="underline underline-orange">
+          <span className="font-bold">
             Full Stack Developer with expertise in the MERN stack, Python, and
             Django.
           </span>{" "}
@@ -37,28 +35,28 @@ const page = () => {
         </p>
       </div>
       <div className="bg-[#181818] px-5 pt-4 pb-12 rounded-3xl mt-10 ">
-        <h1 className="md:text-4xl font-bold my-10 font-Secondary">
+        <h1 className="text-sm md:text-4xl font-bold my-5 font-Secondary">
           How My Expertise Can Benefit You?
         </h1>
-        <div className="flex flex-col gap-5 md:gap-10 font-Tertiary leading-loose text-gray-300 text-sm">
-          <p className="text-sm leading-loose">
+        <div className="flex flex-col gap-5 md:gap-10  leading-loose text-gray-300 text-xs text-justify">
+          <p className="font-Secondary leading-loose">
             As a seasoned Full Stack Developer with proficiency in the MERN
             stack, Python, and Django, I offer a comprehensive skill set to
             elevate your projects. Here&apos;s how my expertise can benefit you:
           </p>
           <ul
             className="list-disc ml-5 flex
-        flex-col gap-2"
+        flex-col gap-2 "
           >
             <li>
-              <span className="underline underline-orange font-bold">
+              <span className="underline underline-orange font-bold font-Secondary">
                 End-to-End Development:
               </span>{" "}
               I handle both front-end and back-end development, ensuring
               seamless integration and a cohesive user experience.
             </li>
             <li>
-              <span className="underline underline-orange font-bold">
+              <span className="underline underline-orange font-bold font-Secondary">
                 Rapid Development:
               </span>{" "}
               My ability to work across the entire stack accelerates the
@@ -66,7 +64,7 @@ const page = () => {
               products.
             </li>
             <li>
-              <span className="underline underline-orange font-bold">
+              <span className="underline underline-orange font-bold font-Secondary">
                 Scalability and Performance:
               </span>{" "}
               I design solutions that are both scalable and high-performing,
@@ -74,7 +72,7 @@ const page = () => {
               demand.
             </li>
             <li>
-              <span className="underline underline-orange font-bold">
+              <span className="underline underline-orange font-bold font-Secondary">
                 Continuous Support:
               </span>{" "}
               Beyond development, I offer ongoing maintenance and support to
@@ -84,73 +82,69 @@ const page = () => {
         </div>
       </div>
       <div>
-        <h1 className="text-md flex gap-2 md:text-3xl font-bold mb-5 mt-10 font-Secondary">
-          <FaBookReader className="text-xl md:text-3xl" />{" "}
+        <h1 className="text-xl flex gap-2 md:text-3xl font-bold mb-5 mt-10 font-Secondary">
+          <FaBookReader className="text-2xl md:text-3xl" />{" "}
           <span>Education</span>
         </h1>
         <p className="flex flex-col gap-2 mb-4">
           <span className="underline underline-orange font-bold">
             Bachelor of Technology (B.Tech)
           </span>
-          <span className="font-Quaternary leading-loose flex items-center gap-2">
+          <span className="font-Quaternary leading-loose flex items-center gap-2 text-gray-300">
             <MdDoubleArrow />
-            MIET, Greater Noida{" "}
-            <span className="text-orange-300 text-xs">2021-2025</span>
+            MIET, Greater Noida
           </span>
         </p>
         <p className="flex flex-col gap-2 mb-4">
           <span className="underline underline-orange font-bold">
-            Higher Secondary Education (12th Grade)
+            Higher Secondary Education (12th Grade) 
           </span>
-          <span className="font-Quaternary flex items-center gap-2">
-            <MdDoubleArrow />
+          <span className="font-Quaternary flex items-center gap-2 text-gray-300">
+          <MdDoubleArrow />
             Shaiffali Public School, Greater Noida
-            <span className="text-orange-300 text-xs">2020-2021</span>
           </span>
         </p>
         <p className="flex flex-col gap-2 mb-4">
           <span className="underline underline-orange font-bold">
             Secondary Education (10th Grade)
           </span>
-          <span className="font-Quaternary flex items-center gap-2">
-            <MdDoubleArrow />
+          <span className="font-Quaternary flex items-center gap-2 text-gray-300">
+          <MdDoubleArrow />
             Shaiffali Public School, Greater Noida
-            <span className="text-orange-300 text-xs">2018-2019</span>
           </span>
         </p>
       </div>
       {/* Hobbies section */}
       <div>
-        <h1 className="text-md flex gap-2 md:text-3xl font-bold mb-5 mt-10 font-Secondary">
+        <h1 className="text-xl flex gap-2 md:text-3xl font-bold mb-5 mt-10 font-Secondary">
           My Hoobies
         </h1>
         <p className="flex flex-col gap-2 mb-4">
           <span className="underline underline-orange font-bold flex items-center gap-2">
-            <FaLaptopCode />
+          <FaLaptopCode />
             Exploring the World of Coding
           </span>
-          <span className="font-Quaternary leading-loose ">
-            Embracing innovation and diving deep into the tech universe. Every
-            click is a new adventure.
+          <span className="font-Quaternary leading-loose text-gray-300 ">
+            
+            Embracing innovation and diving deep into the tech universe. Every click is a new adventure.
           </span>
         </p>
         <p className="flex flex-col gap-2 mb-4">
           <span className="underline underline-orange font-bold flex items-center gap-2">
-            <FaBook />
-            Reading
+          <FaBook />
+            Reading 
           </span>
-          <span className="font-Quaternary flex items-center gap-2">
-            Escaping into worlds beyond imagination, one page at a time.
+          <span className="font-Quaternary flex items-center gap-2 text-gray-300">
+          Escaping into worlds beyond imagination, one page at a time.
           </span>
         </p>
         <p className="flex flex-col gap-2 mb-4">
           <span className="underline underline-orange font-bold flex items-center gap-2">
-            <MdSportsCricket />
+          <MdSportsCricket />
             Cricket
           </span>
-          <span className="font-Quaternary flex items-center gap-2">
-            From the crease to the stands, living for the sound of the bat
-            hitting the ball. Cricket is life.
+          <span className="font-Quaternary flex items-center gap-2 text-gray-300">
+          From the crease to the stands, living for the sound of the bat hitting the ball. Cricket is life.
           </span>
         </p>
       </div>
