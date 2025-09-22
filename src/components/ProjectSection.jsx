@@ -17,12 +17,12 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "DocMemo - Blog",
+    title: "MH Fitness – Strength Club ",
     description: `Next.js | Tailwind CSS | Vercel`,
-    image: `/images/projects/docmemo.png`,
+    image: `https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTB8fGd5bXxlbnwwfHwwfHx8MA%3D%3D`,
     tags: [`All`, `Frontend`],
-    gitUrl: "https://github.com/ankitchoubeyy/DocMemo",
-    previewUrl: "https://docmemo.vercel.app/",
+    gitUrl: "https://github.com/ankitchoubeyy/mh-fitness",
+    previewUrl: "https://mhfitness.vercel.app/",
   },
   {
     id: 3,

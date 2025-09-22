@@ -1,6 +1,6 @@
 "use client"
 import { FaHtml5, FaCss3Alt, FaReact, FaJsSquare, FaPython, FaNodeJs } from "react-icons/fa";
-import { SiTailwindcss, SiExpress, SiDjango, SiMysql, SiNextdotjs, SiMongodb } from "react-icons/si";
+import { SiTailwindcss, SiExpress, SiDjango, SiMysql, SiNextdotjs, SiMongodb, SiPhp } from "react-icons/si";
 import { motion } from "framer-motion";
 
 const skillsIcons = [
@@ -41,8 +41,8 @@ const skillsIcons = [
     label: "Python",
   },
   {
-    icon: <SiDjango size={140} />,
-    label: "Django",
+    icon: <SiPhp size={140} />,
+    label: "PHP",
   },
   {
     icon: <SiMysql size={140} />,
@@ -59,7 +59,7 @@ function Skills() {
     <div className="py-5" id="skills">
       <div className="text-white mx-auto p-8 text-center">
       <h2 className="text-white mb-16 text-center font-extrabold text-4xl md:text-5xl  ">
-        Technologies
+        Skills
       </h2>
         <div className="grid grid-cols-2 gap-1 md:gap-6 sm:grid-cols-3 md:grid-cols-4 place-items-center">
           {skillsIcons.map((skill, index) => (

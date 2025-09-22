@@ -25,8 +25,6 @@ function NavBar() {
 
   const dataMenu = [
     { title: "Home", path: "/" },
-    { title: "About", path: "/about" },
-    { title: "Blog", path: "#" },
     { title: "Contact me", path: "#contact" },
   ];
 
